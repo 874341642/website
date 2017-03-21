@@ -2,9 +2,11 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="MemberEntity" type="com.website.entity.MemberEntity"/>
+		<typeAlias alias="MemberEntity" type="com.website.entity.member.MemberEntity"/>
+		<typeAlias alias="SmsEntity" type="com.website.entity.publics.SmsEntity"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="com/website/dao/member/Member.xml" />
+		<mapper resource="com/website/dao/publics/Sms.xml" />
 	</mappers>
 </configuration>	

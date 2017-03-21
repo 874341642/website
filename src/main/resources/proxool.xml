@@ -2,11 +2,11 @@
 <something-else-entirely>
     <proxool>
         <alias>websitedatabase</alias>   
-      	<driver-url>jdbc:mariadb://192.168.1.202:3306/test</driver-url>         
+      	<driver-url>jdbc:mariadb://192.168.3.100:3306/website</driver-url>         
         <driver-class>org.mariadb.jdbc.Driver</driver-class>
         <driver-properties>
  		    <property name="user" value="root"/>
-            <property name="password" value="Love_Me"/>     
+            <property name="password" value="123456"/>     
             <property name="characterEncoding" value="UTF-8"/>   
         </driver-properties>            
         <maximum-connection-count>500</maximum-connection-count>             

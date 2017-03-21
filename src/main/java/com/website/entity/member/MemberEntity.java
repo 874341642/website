@@ -1,8 +1,10 @@
-package com.website.entity;
+package com.website.entity.member;
 
 import java.io.Serializable;
 
-public class MemberEntity implements Serializable {
+import com.website.entity.Entity;
+
+public class MemberEntity extends Entity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private Long id;
@@ -11,7 +13,7 @@ public class MemberEntity implements Serializable {
 	private String payment_passwd;
 	private String mobile;
 	private int status;
-	private java.sql.Date cdate;
+	
 	private java.sql.Date mdate;
 
 	public Long getId() {
@@ -62,13 +64,7 @@ public class MemberEntity implements Serializable {
 		this.status = status;
 	}
 
-	public java.sql.Date getCdate() {
-		return cdate;
-	}
-
-	public void setCdate(java.sql.Date cdate) {
-		this.cdate = cdate;
-	}
+	
 
 	public java.sql.Date getMdate() {
 		return mdate;
