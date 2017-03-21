@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.website.dao.member.MemberDao">
+	<resultMap type="MemberEntity" id="memberResultMap">
+		<id property="id" column="id" />
+		<result property="account" column="account" />
+		<result property="passwd" column="passwd" />
+		<result property="payment_passwd" column="payment_passwd"/>
+		<result property="mobile" column="mobile" />
+		<result property="status" column="status" />
+		<result property="cdate" column="cdate" />
+		<result property="mdate" column="mdate" />
+	</resultMap>
+	
+	<select id="getMember" parameterType="String" resultType="MemberEntity" resultMap="memberResultMap">  
+      select * from member where id=#{memberID}
+	</select>
+	
+	<select id="getMemberAll" resultType="MemberEntity"	resultMap="memberResultMap">  
+      select * from member
+	</select>
+</mapper>
+
